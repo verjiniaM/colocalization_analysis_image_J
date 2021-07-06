@@ -1,0 +1,18 @@
+Macros 4. & 5. 
+
+4.z_stack_composite.ijm
+Start with the .czi image from the microscope
+creases a z-stack of 2 of the channels (no DAPI) and saves it
+
+The user has to cut out ROIs - dendrites and put them in a separate folder for each co-localizing protein.
+
+5.semi-automatic_analysis.ijm
+Input folder: folder contining all the cut ROIs (dendrites)
+Output: folder with 3 subfolders 
+	- /masks
+	- /thresholded
+	- /logs
+Upon using the script the user has to first selct a mask that covers only the area of the ROI
+The eraser tool might be needed to delete any background signal.
+--> Click OK
+when JaCob window opens user has to select analyze, close the Jacob window, and click ok. 
